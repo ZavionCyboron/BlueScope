@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: monitor-app
+Version: 0.1.0
+Summary: Advanced Task Manager builkt with PySide6
+Requires-Python: >=3.10
+Requires-Dist: PySide6>=6.6.0
+Requires-Dist: psutil>=5.9.0
