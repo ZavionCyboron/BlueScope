@@ -14,6 +14,13 @@ class ProcessInfo:
     create_time: Optional[datetime]
 
 @dataclass(frozen=True)
+class ProcessGroupInfo:
+    name: str
+    count: str
+    cpu_percent: float # grouped (smoothed) CPU sum
+    mem_mb: float
+
+@dataclass(frozen=True)
 class SystemInfo:
     timestamp: datetime
     cpu_percent: float
@@ -30,8 +37,13 @@ class SystemInfo:
     net_recv_mbps: float
 
 @dataclass(frozen=True)
-class ProcessGroupInfo:
-    name: str
-    count: str
-    cpu_percent: float # grouped (smoothed) CPU sum
-    mem_mb: float
+class ConnectionInfo:
+    pid: int
+    process: str
+    proto: str
+    local: str
+    remote: str
+    remote_ip: str
+    remote_port: int
+    status: str
+    domain: str

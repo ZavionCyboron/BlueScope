@@ -20,6 +20,7 @@ src/monitor_app/services/__init__.py
 src/monitor_app/services/file_search.py
 src/monitor_app/services/file_service.py
 src/monitor_app/services/permissions.py
+src/monitor_app/services/task.py
 src/monitor_app/services/traceroute_service.py
 src/monitor_app/services/worker.py
 src/monitor_app/services/collectors/__init__.py
@@ -31,6 +32,7 @@ src/monitor_app/ui/main_window.py
 src/monitor_app/ui/models/__init__.py
 src/monitor_app/ui/models/file_model.py
 src/monitor_app/ui/models/network_model.py
+src/monitor_app/ui/models/process_group_model.py
 src/monitor_app/ui/models/process_model.py
 src/monitor_app/ui/tabs/__init__.py
 src/monitor_app/ui/tabs/files_tab.py

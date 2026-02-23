@@ -1,6 +1,7 @@
 import sys
 from PySide6.QtWidgets import QApplication, QWidget
 from PySide6.QtCore import QThread
+import faulthandler
 
 from monitor_app.core.bus import AppBus
 from monitor_app.services.worker import CollectorWorker
@@ -9,7 +10,6 @@ from monitor_app.ui.main_window import MainWindow
 def main():
     app = QApplication(sys.argv)
 
-    import faulthandler
     faulthandler.enable()
 
     app.setStyleSheet("""
@@ -19,7 +19,7 @@ def main():
     }
     
     QTableView {
-        gridline-color: #33333;
+        gridline-color: #333;
     }
     
     QHeaderView::section {
